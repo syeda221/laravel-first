@@ -7,7 +7,7 @@
 </head>
 <body>
     <h2>Add Student</h2>
-    <form action="{{route('adding')}}" method="post">
+    <form action="{{ route('adding') }}" method="post">
         @csrf
        name <br> <input type="text" name="name">
        <br><br>
