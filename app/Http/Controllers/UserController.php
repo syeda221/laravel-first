@@ -7,10 +7,10 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
     //
-    public function add(){
+    public function add_student(){
         return view('Student.add_student');
     }
       public function save_student(Request $request){
-       ddd($request);
+       dd($request);
     }
 }
