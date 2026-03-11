@@ -6,8 +6,25 @@
     <title>All Student</title>
 </head>
 <body>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
     @foreach($students as $student)
-{{student->name }}
-@endforeach;
+
+
+
+
+        <tr>
+            <td>{{$student->id}}</td>
+            <td>{{$student->name}}
+</td>
+<td>{{$student->email}}</td>
+        </tr>
+        @endforeach
+    </table>
+
 </body>
-</html>
+</html> 
