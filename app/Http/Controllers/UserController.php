@@ -11,6 +11,6 @@ class UserController extends Controller
         return view('Student.add_student');
     }
       public function save_student(Request $request){
-       dd($request);
+       dd($request->all());
     }
 }
