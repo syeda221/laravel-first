@@ -16,6 +16,12 @@ class UserController extends Controller
             'name' => $request->name,
             'email' => $request->email
         ]);
-        return "studnet added";
+        return "t added";
     }
+    public function show_student()
+{
+    $students = Student::all();
+
+    return view('Student.show_student', compact('students'));
+}
 }
