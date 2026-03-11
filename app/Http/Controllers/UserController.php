@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\student;
 use Illuminate\Http\Request;
+
 
 class UserController extends Controller
 {
@@ -11,6 +12,10 @@ class UserController extends Controller
         return view('Student.add_student');
     }
       public function save_student(Request $request){
-       dd($request->all());
+        student::create([
+            'name' => $request->name,
+            'email' => $request->email
+        ]);
+        return "studnet added";
     }
 }
