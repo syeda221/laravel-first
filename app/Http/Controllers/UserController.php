@@ -16,7 +16,8 @@ class UserController extends Controller
             'name' => $request->name,
             'email' => $request->email
         ]);
-        return "student added";
+        // return "student added";
+        return redirect("/show-student");
     }
     public function show_student()
 {
