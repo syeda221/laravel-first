@@ -19,9 +19,11 @@
 
         <tr>
             <td>{{$student->id}}</td>
-            <td>{{$student->name}}
-</td>
-<td>{{$student->email}}</td>
+            <td>{{$student->name}}</td>
+           <td>{{$student->email}}</td>
+           <td><a href="{{'/edit_student', $student->id}}">edit</a></td>
+           <td><a href="{{route('edit.student' , $student->id)}}">edit</a></td>
+           <td></td>
         </tr>
         @endforeach
     </table>
