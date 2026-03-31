@@ -18,5 +18,5 @@ use App\Http\Controllers\UserController;
 // });
 Route::get('/add-student',[UserController::class,'add_student']);
 Route::post('/save-student',[UserController::class,'save_student'])->name('adding');
-Route::get('/show-student',[UserController::class,'show_student']);
-Route::get('edit-student/{$id}',[UserController::class,'edit_student'])->name('edit.student');
+// Route::get('/show-student',[UserController::class,'show_student']);
+// Route::get('edit-student/{$id}',[UserController::class,'edit_student'])->name('edit.student');
