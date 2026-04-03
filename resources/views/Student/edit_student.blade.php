@@ -6,9 +6,13 @@
     <title>edit student</title>
 </head>
 <body>
-    <form action="">
-        <input type="text" value="{{$student_details->name}}">
-        <input type="text" value="{{$student_details->email}}">
+    <h1>Edit Details</h1>
+    <form action="/update-student/{{ $student_details->id }}" method="post">
+                Name:  <br>
+        <input type="text" value="{{ $student_details->name }}"><br><br>        Email:  <br>
+        <input type="text" value="{{ $student_details->email }}">
+        <br><br>
+        <input type="submit">
     </form>
 </body>
 </html>
