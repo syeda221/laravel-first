@@ -21,3 +21,7 @@ Route::post('/save-student',[UserController::class,'save_student'])->name('addin
 Route::get('/show-student',[UserController::class,'showstudent']);
 Route::get('edit-student/{id}',[UserController::class,'edit_student'])->name('edit.student');
 Route::delete('/delete-student/{id}',[UserController::class,'delete_student'])->name('delete.student');
+
+
+
+
