@@ -36,4 +36,13 @@ public function delete_student($id){
     return redirect('/show-student');
 
 }
+public function update_student(Request $request, $id){
+    $student = Student::find($id);
+   $newdata=  Student::where('id',$id)->update([
+    'name'=>$request->name ?? $student->name
+    ,'email'=>$request->email ?? $student->email
+    ]);
+    return redirect('/show-student');
+
+}
 }
