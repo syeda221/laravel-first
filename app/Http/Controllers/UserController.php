@@ -24,7 +24,8 @@ class UserController extends Controller
 public function showstudent()
 {
     $students = Student::all();
-    return view('Student.show_student', compact('students'));
+    // return view('Student.show_student', compact('students'));
+    return response()->json($students);
 }
 
 //delete fucntion
