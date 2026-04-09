@@ -12,6 +12,7 @@
        name <br> <input type="text" name="name">
        <br><br>
        email <br><input type="email" name="email"><br>
+       Image <br><input type="file" name="email"><br>
        <br><input type="submit">
     </form>
 </body>

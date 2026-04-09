@@ -21,11 +21,14 @@
             <td>{{$student->id}}</td>
             <td>{{$student->name}}</td>
            <td>{{$student->email}}</td>
-    <td><form action="{{ route('delete.student', $student->id) }}" method="POST">
+    <td>
+        <!-- <form action="{{ route('delete.student', $student->id) }}" method="POST">
         @csrf
         @method('DELETE')
         <button type="submit" onclick="return confirm('Are You Sure?')">Delete</button>
-    </form></td>
+    </form> -->
+    <a  onclick="return confirm('Are You Sure?')" href="{{route('delete.student',$student->id)}}">Delete</a>
+</td>
            
            <td><a href="{{route('edit.student' , $student->id)}}">edit</a></td>
            <td></td>
